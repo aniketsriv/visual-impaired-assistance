@@ -30,11 +30,7 @@ void loop() {
   
   while(Serial.available()){
     char ch = Serial.read();//receive serially from OCR
-  
-  
-  //char ch = 'e ';//receive serially from OCR
-  //delay(5000);
-  if(ch>='a'&&ch<='z')
+    if(ch>='a'&&ch<='z')
   {
     for(long int i=br[ch-'a'],j=5;i>0,j>=0;i/=10,j--)
     {
@@ -46,7 +42,11 @@ void loop() {
        else
         sn[j].write(0);
     }
-  }  
+  } 
+  
+  //char ch = 'e ';//receive serially from OCR
+  //delay(5000);
+ 
   delay(1000);
 }
 }
