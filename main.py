@@ -3,7 +3,6 @@ import time
 import numpy as np
 #IMAGE PROCESSING LIBRARIES
 import cv2
-import numpy as np
 from PIL import Image
 import imutils #used to resize the obtained frame
 from skimage.filters import threshold_local #Compute a threshold mask image based on local pixel neighborhood
@@ -188,4 +187,4 @@ language = 'en'
 myobj = gTTS(text=mytext, lang=language, slow=False)
 myobj.save("output.mp3")
 os.system("start output.mp3")
-print("------ Done -------")
+print("Process Completed")
