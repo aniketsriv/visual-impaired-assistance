@@ -6,12 +6,13 @@ import cv2
 from PIL import Image
 import imutils #used to resize the obtained frame
 from skimage.filters import threshold_local #Compute a threshold mask image based on local pixel neighborhood
-#TESSERACT-OCR 
-import pytesseract
-#Google text-to-speech
-from gtts import gTTS 
 #Pyserial Library - create serial connection to arduino port
 import serial
+#Google text-to-speech
+from gtts import gTTS 
+#TESSERACT-OCR 
+import pytesseract
+
 #-------------------------------------------#
 #ARDUINO CONNECTION
 Arduinouno_Serial = serial.Serial('COM4',9600) #opens serial port
