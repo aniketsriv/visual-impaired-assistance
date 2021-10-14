@@ -1,11 +1,10 @@
-import os #traverse directory
-import time
-import numpy as np
 #IMAGE PROCESSING LIBRARIES
 import cv2
 from PIL import Image
-import imutils #used to resize the obtained frame
-from skimage.filters import threshold_local #Compute a threshold mask image based on local pixel neighborhood
+import imutils #used to resize the obtained framefrom skimage.filters import threshold_local #Compute a threshold mask image based on local pixel neighborhood
+import os #traverse directory
+import time
+import numpy as np
 #Pyserial Library - create serial connection to arduino port
 import serial
 #Google text-to-speech
@@ -121,10 +120,10 @@ def get_string(img_path):
     
     for i in range(len(result)): #for Serial transmission of data to arduino
         
-        print(result[i])
+
         Arduinouno_Serial.write(result[i].encode())
-        
-        time.sleep(2)
+        print(result[i])
+	        time.sleep(2)
 
     return result
 #-------------------------------------------#
