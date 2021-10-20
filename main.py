@@ -3,7 +3,7 @@ import cv2
 from PIL import Image
 import imutils #used to resize the obtained framefrom skimage.filters import threshold_local #Compute a threshold mask image based on local pixel neighborhood
 import os #traverse directory
-import time
+import time#function takes seconds passed since epoch 
 import numpy as np
 #Pyserial Library - create serial connection to arduino port
 import serial
