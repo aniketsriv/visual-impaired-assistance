@@ -82,6 +82,7 @@ def four_point_transform(image, pts):
  
 	# return the warped image
 	return warped
+        #return req
 
 def get_string(img_path):
     # Read image with opencv
