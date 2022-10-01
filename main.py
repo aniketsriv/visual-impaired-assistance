@@ -129,8 +129,8 @@ def get_string(img_path):
 	        time.sleep(2)
 
     return result
-#-------------------------------------------#
 
+#///////////////////////////////////////////
 cap = cv2.VideoCapture(0) 
 #cv2.VideoCapture(1) #for external camera
 image_path = "img.jpg"
@@ -180,10 +180,8 @@ while True:
 
 cap.release()    
 cv2.destroyAllWindows()
-
 filename = "123.jpg" #location where image captured from camera is saved
-
-print('--- Started recognizing text from image ---')
+print('>>>Started recognizing text from image<<<')
 mytext = get_string(filename)
 print(mytext)
 language = 'en'
