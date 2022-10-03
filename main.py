@@ -27,10 +27,13 @@ def order_points(pts):
 	# bottom-right, and the fourth is the bottom-left
 	rect = np.zeros((4, 2), dtype = "float32")
  
+
+
 	# the top-left point will have the smallest sum, whereas
 	# the bottom-right point will have the largest sum
 	s = pts.sum(axis = 1)
 	rect[2] = pts[np.argmax(s)]
+	
 	rect[0] = pts[np.argmin(s)]
 	
  
@@ -39,6 +42,7 @@ def order_points(pts):
 	# whereas the bottom-left will have the largest difference
 	diff = np.diff(pts, axis = 1)
 	rect[3] = pts[np.argmax(diff)]
+	
 	rect[1] = pts[np.argmin(diff)]
 	
  
